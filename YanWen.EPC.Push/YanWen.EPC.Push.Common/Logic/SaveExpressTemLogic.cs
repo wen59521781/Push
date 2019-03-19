@@ -125,7 +125,7 @@ namespace YanWen.EPC.Push.Common.Logic
             reslut.ExchangeNumber = exchangeNumber;
             reslut.BarCode = model.barcode;
             reslut.CombineId = item.Number;
-            reslut.Weight = EpcDal.Instance.GetEpcCombineWeight(orders, item.Parameter);
+            reslut.Weight = EpcDal.Instance.GetEpcCombineWeight(orders, item.Parameter,item.Parameter1);
             reslut.carrier = model.carrier;
             reslut.Piece = orders.Count;
             reslut.pdf_10_en_url = model.pdf_10_en_url;

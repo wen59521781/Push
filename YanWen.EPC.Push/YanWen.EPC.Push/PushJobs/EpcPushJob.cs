@@ -241,7 +241,7 @@ namespace YanWen.EPC.Push.PushJobs
                                             {
                                                 data.api_key = ApiKey;
                                                 data.orders = orderlist.ToArray();
-                                                data.total_weight = (float)(EpcDal.Instance.GetEpcCombineWeight(orderlist, t.Parameter) * 0.001);
+                                                data.total_weight = (float)(EpcDal.Instance.GetEpcCombineWeight(orderlist, t.Parameter,t.Parameter1) * 0.001);
                                                 json = data.ToJsonString();
                                             }
                                             else

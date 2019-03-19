@@ -17,7 +17,7 @@ namespace YanWen.EPC.Push.Common.Model
 
         public string Parameter { get; set; }
 
-
+        public string Parameter1 { get; set; }
         public string MainPart { get; set; }
 
         public string Action { get; set; }
